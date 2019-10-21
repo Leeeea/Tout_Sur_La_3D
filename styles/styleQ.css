@@ -1,0 +1,258 @@
+body{
+    background-color: #424242;
+    margin:0px;  
+    font-family: 'Raleway', serif;
+    font-weight: 300;
+    color: white;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-weight: 500;
+    margin: 0px; 
+}
+
+h2{
+    font-weight: 500;
+    margin: 0%;
+}
+
+p{margin: 0%;}
+
+
+/* OUTILS *//* OUTILS *//* OUTILS *//* OUTILS */
+.flex{
+    display: flex;
+}
+
+.block{
+    display: inline;
+}
+
+.shadow{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
+}
+
+.img{
+    padding: 20px;
+}
+.img:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.position{
+position: sticky;
+}
+
+/* ******************************************************* */
+/* ************************HEADER************************* */
+/* ******************************************************* */
+header{
+    background: rgba(0, 0, 0, 0.589);
+    text-align: center;
+
+}
+
+.degrade-head{
+    animation: color 5s alternate infinite;
+    padding: 2px;
+}
+
+@keyframes color{
+    0%{
+        background: #fcb667;
+    }
+    20%{
+        background: #fc6767;
+    }
+    40%{
+        background: #fc6767;
+
+    }
+    60%{
+        background: #ec008c;
+
+    }
+    80%{
+        background: #ec008c;
+
+    }
+    100%{
+        background: #ff00fa;
+
+    }
+}
+/* ******************************************************* */
+/* **********************FIN HEADER*********************** */
+/* ******************************************************* */
+
+/* ******************************************************* */
+/* ************************   MENU   ********************* */
+/* ******************************************************* */
+
+/* MENU *//* MENU *//* MENU */
+nav{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(19, 19, 19);
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    transform: translateX(-200px);
+    transition: 0.4s;
+}
+  
+nav a {
+    color: white;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px; 
+}
+  
+nav a:hover:nth-child(5) {
+    background-color: #9d00ff;
+    color: black;
+    transition-duration: 0.4s;
+}
+  
+nav a:hover:nth-child(4) {
+    background-color: #ff00fa;
+    color: black;
+    transition-duration: 0.4s;
+}
+  
+nav a:hover:nth-child(3) {
+    background-color:#ff0097;
+    color: black;
+    transition-duration: 0.4s;
+}
+  
+nav a:hover:nth-child(2) {
+    background-color:#fc6767;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+nav a:hover:nth-child(1) {
+    background-color:#fcb667;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.menu {
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu button {
+    color: white;
+    float: right;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px; 
+    background-color: transparent;
+    border: none;
+}
+
+.translate{
+    transform: translateX(0px);
+}
+  
+/* ******************************************************* */
+/* ************************FIN MENU*********************** */
+/* ******************************************************* */
+
+.recherche{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    background: linear-gradient(90deg, #ff00fa 0%, #ff0097 49%, #fc6767 100%);
+    margin: 20px 20% auto 20%;
+}
+
+/* ******************************************************* */
+/* *************************MAIN************************** */
+/* ******************************************************* */
+
+
+main{
+    background-color: rgba(17, 17, 17, 0.829);
+    margin: 40px 2% auto 2%;
+}
+
+
+/* QUESTIONS */
+.question{
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.527);
+    margin: 20px 20px auto 20px;
+}
+.button{
+    margin: 20px 10% auto 10%;
+}
+button{
+    padding: 20px 30px 20px 30px; 
+    background: #424242;
+    border: none;
+    margin: 15px auto auto auto ;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+/* ******************************************************** */
+/* *********************** FOOTER ************************ */
+/* ******************************************************** */
+
+footer{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 40px;
+  }
+  
+  .menu-footer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+  }
+  
+  .menu-footer a {
+    font-family : 'Raleway' , sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight:300;
+    padding-left: 15px; 
+    
+  } 
+  
+.menu-footer a:hover{
+    color: #c70dff;
+    transition-duration: 0.4s;
+}
+  
+  
+  hr{
+    margin-top: 20px;
+    width: 400px;
+  }

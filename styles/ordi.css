@@ -1,0 +1,87 @@
+/* BALISEs DE BASE */
+.button{
+    margin: 10px 35% 10px 35%;
+}
+/* ************** */
+/* Recherche/info */
+/* ************** */
+
+
+
+.bulle{
+  
+    margin: 20px 4px 0px 4px;
+}
+/* ANIMATION */
+/* @KEYFRAMES */
+.blur1 {
+	animation: Blur 10s infinite;
+}
+.blur2 {
+    animation: Blur2 10s infinite;
+}
+
+@keyframes Blur {
+    0% {
+        letter-spacing: 0.2em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+    10% { 
+        letter-spacing: normal;
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes Blur2 {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        letter-spacing: 0.2em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+    20% { 
+        letter-spacing: normal;
+        filter: blur(0px);
+        opacity: 1;
+    }  
+}
+ 
+/* ******************************************************* */
+/* ************************MAIN*************************** */
+/* ******************************************************* */
+
+.barre{
+    margin: auto auto auto 0px;
+}
+
+.container{
+    margin-top: 90px;
+}
+.container h1{
+    text-align: left;
+}
+
+/* Les métiers *//* Les métiers *//* Les métiers */
+.grid{
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "fi1 fi2 fi3";
+}
+.fi3{
+    display: initial;
+}
+
+.fiche:hover{
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+
+/* ************************************************************** */
+/* PAGES DES MéTIERS : metier.html */ 
+
