@@ -386,23 +386,21 @@ footer{
     padding-top: 40px;
   }
   
-  .menu-footer a {
+ .menu-footer a {
     font-family : 'Raleway' , sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: #f2f2f2;
     font-weight:300;
     padding-left: 15px; 
-    
   } 
   
 .menu-footer a:hover{
     color: #c70dff;
     transition-duration: 0.4s;
 }
-  
-  
-  hr{
+   
+ hr{
     margin-top: 20px;
-    width: 50%;
-  }
+    width: 40%;
+ }
