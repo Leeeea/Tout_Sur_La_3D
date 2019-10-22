@@ -94,14 +94,10 @@ header{
 
 @keyframes color{
     0%{
-        background: #eeff00;
-    }
-    50%{
-        background: #2bff00;
-
+        background: #ff0000;
     }
     100%{
-        background: #00ffb3;
+        background: #bf00ff;
 
     }
 }
@@ -201,7 +197,7 @@ nav a:hover:nth-child(1) {
 .recherche{
     text-align: center;
     padding: 20px 20px 0px 20px;
-    background: linear-gradient(90deg, #eeff00 0%, #2bff00 50%,  #00ffb3 100%);
+    background: linear-gradient(90deg, #bf00ff 0%, #ff0000 100%);
     margin: 20px 7% auto 7%;
 }
 
@@ -224,7 +220,7 @@ main{
     margin: 0px;
     height: 2px;
     width: 300px;
-    background: linear-gradient(90deg, #eeff00 0%, #2bff00 50%,  #00ffb3 100%);
+    background: linear-gradient(90deg, #bf00ff 0%, #ff0000 100%);
     margin: auto auto auto auto;
 }
 
