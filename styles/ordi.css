@@ -1,11 +1,15 @@
 /* BALISEs DE BASE */
+h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
 .button{
     margin: 10px 35% 10px 35%;
 }
 /* ************** */
 /* Recherche/info */
 /* ************** */
-
 
 
 .bulle{

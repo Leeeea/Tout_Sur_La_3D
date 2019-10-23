@@ -22,13 +22,14 @@ a{
     color: white;
 }
 h1{
-    font-weight: 500;
-    margin: 0px; 
+    font-weight: 800;
+    font-size: 25px;
+    margin: 50px auto 0px auto;
 }
 
 h2{
     font-weight: 500;
-    margin: 0%;
+    margin: 10px;
 }
 p{margin: 0%;}
 
@@ -72,11 +73,15 @@ input:hover{
 .shadow{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 }
-
 .img{
-    margin-top: 10px;
+    padding: 13px;
 }
 
+.hover:hover{
+    transform: scale(1.04);
+    transition: 0.4s;
+   
+}
 /* ******************************************************* */
 /* ************************HEADER************************* */
 /* ******************************************************* */
@@ -132,31 +137,31 @@ nav a {
 
  
 nav a:hover:nth-child(5) {
-    background-color: #ffbb00;
+    background-color: #bf00ff;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(4) {
-    background-color: #eeff00;
+    background-color: #f700ff;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(3) {
-    background-color:#2bff00;
+    background-color:#ff0077;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(2) {
-    background-color:#00ffb3;
+    background-color:#ff0000;
     color: black;
     transition-duration: 0.4s;
 }
 
 nav a:hover:nth-child(1) {
-    background-color:#008cff;
+    background-color:#ff5100;
     color: black;
     transition-duration: 0.4s;
 }
@@ -176,6 +181,13 @@ nav a:hover:nth-child(1) {
     background-color: transparent;
     border: none;
 }
+.align{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 70px 70px 70px 70px 70px ;
+    padding: 0px;
+    align-items: center;
+ }
 
 .translate{
     transform: translateX(0px);
@@ -196,7 +208,7 @@ nav a:hover:nth-child(1) {
 }
 .recherche{
     text-align: center;
-    padding: 20px 20px 0px 20px;
+    padding: 10px 20px 20px 20px;
     background: linear-gradient(90deg, #bf00ff 0%, #ff0000 100%);
     margin: 20px 7% auto 7%;
 }
@@ -206,8 +218,8 @@ nav a:hover:nth-child(1) {
 /* ******************************************************* */
 
 main{
-    background-color: rgba(17, 17, 17, 0.829);
-    margin: 40px 2% auto 2%;
+    background: linear-gradient(90deg, #bf00ff69 0%, #ff000063 100%);
+    margin: 40px 2% 50px 2%;
 }
 
 .container{
@@ -270,7 +282,7 @@ main{
     transition: 0.2s;
 }
 .suite{
-    color: #00ffb3;
+    color: #ffa6fb;
 }
 /* ******************************************************** */
 /* *********************** FOOTER ************************ */

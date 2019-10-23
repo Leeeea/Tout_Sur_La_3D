@@ -34,8 +34,9 @@ button:hover{
 }
 
 h1{
-    font-weight: 500;
-    margin: 0px; 
+    font-weight: 800;
+    font-size: 30px;
+    margin: 50px auto 0px auto;
 }
 
 h2{
@@ -43,6 +44,16 @@ h2{
     margin: 0%;
     margin-top: 10px;
 }
+
+h3{
+    font-weight: 800;
+    margin: 80px auto 10px auto;
+    background-color: #ff0d4aa4;
+    border-radius:20px; 
+    padding: 20px;
+    max-width: 250px; 
+}
+
 
 p{
     margin: 10px;
@@ -92,11 +103,6 @@ input:hover{
 .shadow{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 }
-
-.img{
-    padding: 10px 10px 0px 10px;
-}
-
 
 .fiche:nth-child(1){
     background: rgba(212, 0, 255, 0.5);
@@ -199,7 +205,7 @@ nav a:hover:nth-child(3) {
   
 nav a:hover:nth-child(2) {
     background-color:blue;
-    color: black;
+    color: rgb(161, 161, 161);
     transition-duration: 0.4s;
 }
 
@@ -208,6 +214,13 @@ nav a:hover:nth-child(1) {
     color: black;
     transition-duration: 0.4s;
 }
+.align{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 70px 70px 70px 70px 70px ;
+    padding: 0px;
+    align-items: center;
+ }
 
 /* BARRE MENU *//* BARRE MENU *//* BARRE MENU */
 .menu {
@@ -243,6 +256,16 @@ nav a:hover:nth-child(1) {
     opacity: 0.95;
     padding: 25px ;
 }
+
+.recherche p{
+    margin: 0px;
+}
+.recherche div p{
+    margin: 10px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
 .info{
     background-color: #13131356;
     padding: 7px;
@@ -250,30 +273,10 @@ nav a:hover:nth-child(1) {
     margin-top: 40px;
 }
 
-.bulle{
-    display: grid;
-    grid-template-columns: auto;
-    margin: 10px auto 0px auto;
-}
-.bulle p{
-    font-size: 13px;
-}
-.bulle div{
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
-    border-radius: 50px;
-    background-color: #13131327;
-
-}
-
-
-
-
 .transition{
     background: rgba(0, 0, 0, 0.753);
     padding: 1px;
 }
-
 
 /* ******************************************************* */
 /* *************************MAIN************************** */

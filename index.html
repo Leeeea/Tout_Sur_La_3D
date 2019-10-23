@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link 
     href="https://fonts.googleapis.com/css?family=Hind+
-    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700" 
+    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700,800,900" 
     rel="stylesheet">
   
     <link rel="stylesheet" href="styles/style.css">
@@ -22,13 +22,13 @@
     <!-- ---------MENU GAUCHE-------- -->
     <!-- ---------------------------- -->
     <nav class="shadow" id="nav">   
-            <div>
-                <a href="page/metier.html">Les Métiers de la 3D</a>
-                <a href="page/histoire.html">Histoire de l'animation 3D</a>
-                <a href="page/film.html">Faire un film d'animation</a>
+            <div class="align">
+                <a href="page/metier.html">Les Métiers</a>
+                <a href="page/histoire.html">Histoire de la 3D</a>
+                <a href="page/film.html">Faire un film</a>
                 
-                <a href="">Glossaire - Vocabulaire de la 3D</a>
-                <a href="page/quizz.html">Quizz - tester ses connaissances</a>
+                <a href="">Glossaire</a>
+                <a href="page/quizz.html">Quizz</a>
             </div>
     </nav>
     <!-- ---------------------------- -->
@@ -63,22 +63,18 @@
     <!-- -------------- --> 
     <!-- RECHERCHE -->
     <div class="recherche shadow">
-        <h2 class="blur1">Bienvenu sur le site Tout Sur La 3D</h2>
+        <h1 class="blur1">Bienvenu sur le site Tout Sur La 3D</h1>
         <p class="blur2">Répertoire d'informations sur l'animation 3D</p>
-        <div class="info shadow">
-            <h2 class="blur1">A Quoi sert ce site ?</h2>
-        
+       
         <!-- INFO -->
-        <div class="bulle">
-            <div class="">
-                <a><img src="img/seo.png" style="width:10%" class="img hover"></a>
-                <p class="blur2">
-                    Se site est un répertoire d'informations sur le monde de l'animation 3D.
-                    Vous y trouverez : des fiches métiers, des quizz, des frises, un glossaire.
-                </p>
-            </div>
-        
+        <div>
+            <h3 class="hover">A quoi sert ce site ?</h3>
+            <p>
+                Se site est un répertoire d'informations sur le monde de l'animation 3D.
+                Vous y trouverez : des fiches métiers, des quizz, des frises, un glossaire.
+            </p>
         </div>
+ 
         </div>
     </div> 
     <!-- ------------------ -->     
@@ -90,7 +86,6 @@
     <!-- ------------main------------ -->
     <!-- ---------------------------- -->
     <main>
-       
         <!-- ----------- -->  
         <!-- Les Métiers -->
         <!-- ----------- -->
@@ -99,7 +94,7 @@
             <h1>Les Métiers</h1>
             <div class="barre"></div>
             <div class="txt shadow">
-                <img src="img/metier.png" style="width:10%">
+                <img src="img/metier.png" style="width:10%" class="hover">
                 <p>Vous trouverez sur ce site une lise des 
                     métiers qui exsitent dans le domaine
                     de l'animation 3D. Si tu veux voir la liste 
@@ -153,20 +148,16 @@
             <h1>Faire Un Film</h1>
             <div class="barre"></div>
             <div class="txt shadow">
-                    <a href="page/film.htm" ><img src="img/movie.png" style="width:12%" class="img"></a> 
-                    <p>Lorem ipsum dolor sit amet, consectetur 
+                <a href="page/film.htm" ><img class="hover" src="img/movie.png" style="width:12%"></a> 
+                <p>Lorem ipsum dolor sit amet, consectetur 
                     adipisicing elit. Iste reiciendis, ullam 
                     explicabo praesentium quis ipsa quas nisi 
                     iusto nam nobis minus aliquam dolore dolorum. 
-                    Distinctio quod tempora cum optio quam.<br>
-                    Voir la page
-                    </p>
-                    <div class="button">
-                        <a href="../film.html">Film ...</a>
-                    </div>
-                  
-                       
-                
+                    Distinctio quod tempora cum optio quam.
+                    Voir la page <a class="a-deco" href="../film.html" >Film ...</a>
+                </p>
+            
+                        
             </div>
             <!-- Frise --><!-- Frise -->
             <div>
@@ -195,15 +186,15 @@
             <h1>Histoire</h1>
             <div class="barre"></div>
             <div class="txt shadow">
-                <a href="page/histoire.html" ><img src="img/time.png" style="width:12%" class="img"></a> 
+                <a href="page/histoire.html" ><img src="img/time.png" style="width:12%" class="hover"></a> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Iste reiciendis, ullam explicabo praesentium quis ipsa quas 
                     nisi iusto nam nobis minus aliquam dolore dolorum. Distinctio 
-                    quod tempora cum optio quam.
+                    quod tempora cum optio quam. <a class="a-deco" href="../histoire.html">Histoire ...</a>
                 </p>
-                <div class="button">
-                    <a href="../histoire.html">Histoire ...</a>
-                </div>
+            
+                
+                
                
             </div>
             <!-- Frise --><!-- Frise -->
@@ -229,7 +220,6 @@
             <h1>Glossaire</h1>
             <div class="barre"></div>
             <div class="txt shadow">
-                <h1>Lorem</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste reiciendis, ullam explicabo praesentium quis ipsa quas nisi iusto nam nobis minus aliquam dolore dolorum. Distinctio quod tempora cum optio quam.</p>
                 <div class="button">
                     <a href="../glossaire.html" >Glossaire</a>
@@ -243,13 +233,13 @@
                     </div>
                     <div class="fiche fi2 shadow">
                         <h2><a href="../glossaire.html" class="blur1">Mot 1</a></h2>
-                        <p c>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing 
                             elit. Molestias quia ex accusamus nulla at aliquid id 
                             nemo doloremque, enim amet officiis maiores.</p>
                     </div>
                     <div class="fiche fi3 shadow">
-                        <h1><a href="../glossaire.html" class="blur1">Mot 1</a></h1>
-                        <p c>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quia ex.</p>   
+                        <h2><a href="../glossaire.html" class="blur1">Mot 1</a></h2>
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quia ex.</p>   
                     </div>
                 </div>
             </div>
