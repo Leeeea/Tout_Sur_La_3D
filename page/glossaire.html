@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link 
+    href="https://fonts.googleapis.com/css?family=Hind+
+    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,800" 
+    rel="stylesheet">
+  
+    <link rel="stylesheet" href="../styles/styleG.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../styles/ordi.css">
+
+    <link rel="icon"  href="../img/logo.png" />   
+    <title>Tout Sur La 3D</title>
+</head>
+<body>
+    <img src="../img/head.jpg" class="bg">
+    <!-- ---------------------------- -->
+    <!-- ---------MENU GAUCHE-------- -->
+    <!-- ---------------------------- -->
+    <nav class="shadow">   
+            <div class="align">
+                <a href="../index.html">Accueil</a>
+                <a href="../page/metier.html">Les Métiers</a>
+                <a href="../page/histoire.html">Histoire de la 3D</a>
+                <a href="../page/blog.html">Blog</a>
+                <a href="../page/glossaire.html">Glossaire</a>
+                <a href="../page/quizz.html">Quizz</a>
+            </div>
+    </nav>
+    <!-- ---------------------------- -->
+    <!-- --------- FIN  MENU--------- -->
+    <!-- ---------------------------- -->
+
+
+    <!-- ---------------------------- -->
+    <!-- -----------HEADER----------- -->
+    <!-- ---------------------------- -->
+    <header id="haut"> 
+        <a href="../index.html" ><img src="../img/logo.png" style="width:15%"><br></a>
+        <div class="degrade"></div>
+    </header> 
+    <!-- ---------------------------- -->
+    <!-- ---------FIN HEADER--------- -->
+    <!-- ---------------------------- -->
+   
+
+    <!-- ---------------------------- -->
+    <!-- ---------MENU BARRE--------- -->
+    <!-- ---------------------------- -->
+    <div class="menu shadow"> 
+        <button class="position" onclick="menu(this)">|||</button>       
+    </div>
+    <!-- ---------------------------- -->
+    <!-- ---------FIN  BARRE--------- -->
+    <!-- ---------------------------- -->
+    
+
+
+
+
+    <!-- ---------------------------- -->
+    <!-- ------------main------------ -->
+    <!-- ---------------------------- -->
+    <div class="recherche">
+        <h1 class="blur1">Tout Sur La 3D</h1>
+        <p class="blur2">Les étapes de la création d'un film d'animation</p>
+        <img src="../img/movie.png" style="width:13%" class="hover">
+    </div>
+
+    <main>
+       
+        <div class="container">
+            <div class="txt">
+                    <h1>Glossaire</h1>
+                    <div class="barre"></div>
+                    <div>
+                        <h2>Mot 1</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate itaque dolores error quidem eveniet iure tenetur fuga, quae voluptatem asperiores nobis vel voluptas aliquid autem, quaerat corporis id veniam.</p>
+                    </div>
+            </div>
+    </main>
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="menu-footer ">
+            <a href="#haut" class="a-footer">Retour haut de la page</a>
+        </div>
+        <hr>
+        <p class="p-footer">Copyright © 2019 - Tout Sur La 3D/Animatic - Tous droits réservés</p>
+    </footer>
+
+    
+    <script src="../jquery.js"></script>
+    <script>
+        // MENUMENUMENU
+        function menu(){
+            document.querySelector("nav").classList.toggle("translate");
+        }
+
+    </script>   
+    
+</body>
+</html>

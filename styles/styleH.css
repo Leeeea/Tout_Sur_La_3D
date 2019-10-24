@@ -149,15 +149,20 @@ nav a {
     text-decoration: none;
     font-size: 20px; 
 }
-  
-nav a:hover:nth-child(5) {
+nav a:hover:nth-child(6) {
     background-color: #d4fffb;
+    color: black;
+    transition-duration: 0.4s;
+}
+ 
+nav a:hover:nth-child(5) {
+    background-color: #00ffea;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(4) {
-    background-color: #00ffea;
+    background-color: #5b79ff;
     color: black;
     transition-duration: 0.4s;
 }
@@ -202,7 +207,7 @@ nav a:hover:nth-child(1) {
 .align{
     display: grid;
     grid-auto-columns: auto;
-    grid-template-rows: 70px 70px 70px 70px 70px ;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
     padding: 0px;
     align-items: center;
 }

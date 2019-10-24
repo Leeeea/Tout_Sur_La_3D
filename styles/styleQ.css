@@ -116,6 +116,11 @@ nav a {
     text-decoration: none;
     font-size: 20px; 
 }
+nav a:hover:nth-child(6) {
+    background-color: #6200ff;
+    color: black;
+    transition-duration: 0.4s;
+}
   
 nav a:hover:nth-child(5) {
     background-color: #9d00ff;
@@ -150,7 +155,10 @@ nav a:hover:nth-child(1) {
 .menu {
     background-color: rgb(19, 19, 19);
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .menu button {
@@ -165,7 +173,7 @@ nav a:hover:nth-child(1) {
 .align{
     display: grid;
     grid-auto-columns: auto;
-    grid-template-rows: 70px 70px 70px 70px 70px ;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
     padding: 0px;
     align-items: center;
  }
