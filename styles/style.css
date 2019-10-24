@@ -21,12 +21,6 @@ a{
     text-decoration: none;
     color: white;
 }
-.a-deco{
-    color: rgb(246, 148, 255);
-    background: #c70dff42;
-    padding: 1px;
-    border-radius: 10px;
-}
 
 button:hover{
     transform: scale(1.2);
@@ -288,7 +282,14 @@ nav a:hover:nth-child(1) {
     margin: 0px;
     margin-bottom: 17px;
     text-align: left;
-}                  
+}     
+.a-deco{
+    color: rgb(246, 148, 255);
+    background: #c70dff42;
+    padding: 1px;
+    border-radius: 10px;
+}
+
 main{
     background: linear-gradient(90deg, rgba(255, 0, 68, 0.4) 0%, rgba(170,0,255,0.3) 49%, rgb(0, 4, 255,0.3) 100%);
     margin: 90px 1% 50px 1%;
@@ -305,7 +306,7 @@ main{
 .barre{
     margin: 0px auto auto auto;
     height: 2px;
-    width: 300px;
+    width: 50%
     background: linear-gradient(90deg, rgba(255,0,70,1) 0%, rgba(170,0,255,1) 49%, rgb(0, 4, 255) 100%);
 }
 
@@ -381,13 +382,13 @@ footer{
     font-size: 10px;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 40px;
-  }
+ }
   
-  .menu-footer {
+ .menu-footer {
     position: relative;
     overflow: hidden;
     padding-top: 40px;
-  }
+ }
   
  .menu-footer a {
     font-family : 'Raleway' , sans-serif;
@@ -396,7 +397,7 @@ footer{
     color: #f2f2f2;
     font-weight:300;
     padding-left: 15px; 
-  } 
+ } 
   
 .menu-footer a:hover{
     color: #c70dff;
