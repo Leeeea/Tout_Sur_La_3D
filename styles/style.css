@@ -292,6 +292,7 @@ nav a:hover:nth-child(1) {
 main{
     background: linear-gradient(90deg, rgba(255, 0, 68, 0.4) 0%, rgba(170,0,255,0.3) 49%, rgb(0, 4, 255,0.3) 100%);
     margin: 90px 1% 50px 1%;
+    padding:20px;
 }
 
 .container{
