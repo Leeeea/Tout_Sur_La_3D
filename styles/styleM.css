@@ -23,8 +23,8 @@ a{
 }
 h1{
     font-weight: 800;
-    font-size: 25px;
-    margin: 50px auto 0px auto;
+    font-size: 30px;
+    margin: 20px auto 0px auto;
 }
 
 h2{
@@ -73,9 +73,7 @@ input:hover{
 .shadow{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 }
-.img{
-    padding: 13px;
-}
+
 
 .hover:hover{
     transform: scale(1.04);
@@ -99,10 +97,10 @@ header{
 
 @keyframes color{
     0%{
-        background: #ff0000;
+        background: #00eeff;
     }
     100%{
-        background: #bf00ff;
+        background: #1900ff;
 
     }
 }
@@ -135,33 +133,34 @@ nav a {
     font-size: 20px; 
 }
 
- 
+
+
 nav a:hover:nth-child(5) {
-    background-color: #bf00ff;
+    background-color: #00ff6a;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(4) {
-    background-color: #f700ff;
+    background-color: #00ffb3;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(3) {
-    background-color:#ff0077;
+    background-color:#0077ff;
     color: black;
     transition-duration: 0.4s;
 }
   
 nav a:hover:nth-child(2) {
-    background-color:#ff0000;
+    background-color:#1900ff;
     color: black;
     transition-duration: 0.4s;
 }
 
 nav a:hover:nth-child(1) {
-    background-color:#ff5100;
+    background-color:#8c00ff;
     color: black;
     transition-duration: 0.4s;
 }
@@ -169,7 +168,10 @@ nav a:hover:nth-child(1) {
 .menu {
     background-color: rgb(19, 19, 19);
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .menu button {
@@ -207,10 +209,14 @@ nav a:hover:nth-child(1) {
     margin-bottom: 17px;
 }
 .recherche{
-    text-align: center;
-    padding: 10px 20px 20px 20px;
-    background: linear-gradient(90deg, #bf00ff 0%, #ff0000 100%);
     margin: 20px 7% auto 7%;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(90deg, #00ffb3 0%, #1900ff 100%);
+ 
+}
+.recherche p{
+    margin: 0px auto 20px auto;
 }
 
 /* ******************************************************* */
@@ -218,7 +224,7 @@ nav a:hover:nth-child(1) {
 /* ******************************************************* */
 
 main{
-    background: linear-gradient(90deg, #bf00ff69 0%, #ff000063 100%);
+    background: linear-gradient(90deg, #00ffb369 0%, #1900ff7c 100%);
     margin: 40px 2% 50px 2%;
 }
 
@@ -229,11 +235,11 @@ main{
 }
 
 .barre{
-    margin: 0px;
+    margin: 0px auto auto auto;
     height: 2px;
-    width: 300px;
-    background: linear-gradient(90deg, #bf00ff 0%, #ff0000 100%);
-    margin: auto auto auto auto;
+    border-radius: 30px;
+    width: 70%;
+    background: linear-gradient(90deg, #00ffb3 0%, #1900ff 100%);
 }
 
 
@@ -282,7 +288,7 @@ main{
     transition: 0.2s;
 }
 .suite{
-    color: #ffa6fb;
+    color: #02ffea;
 }
 /* ******************************************************** */
 /* *********************** FOOTER ************************ */

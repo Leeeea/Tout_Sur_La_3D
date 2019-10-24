@@ -15,14 +15,16 @@ body{
     height: 100vh;
 }
 h1{
-    font-weight: 500;
-    margin: 0px; 
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px auto 0px auto;
 }
 h2{
     font-weight: 500;
     margin: 0%;
 }
 p{margin: 0%;}
+
 input{
     background: transparent;
     padding: 10px;
@@ -68,12 +70,11 @@ input:hover{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 }
 
-.img{
-    padding: 20px;
-}
-.img:hover{
-    transform: scale(1.2);
+
+.hover:hover{
+    transform: scale(1.04);
     transition: 0.4s;
+   
 }
 /* ******************************************************* */
 /* ************************HEADER************************* */
@@ -138,6 +139,7 @@ nav{
     position: fixed;
     transform: translateX(-200px);
     transition: 0.4s;
+    z-index:2;
 }
   
 nav a {
@@ -178,10 +180,14 @@ nav a:hover:nth-child(1) {
     transition-duration: 0.4s;
 }
 
+/* BARRE MENU *//* BARRE MENU *//* BARRE MENU */
 .menu {
     background-color: rgb(19, 19, 19);
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .menu button {
@@ -193,6 +199,13 @@ nav a:hover:nth-child(1) {
     background-color: transparent;
     border: none;
 }
+.align{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 70px 70px 70px 70px 70px ;
+    padding: 0px;
+    align-items: center;
+}
 
 .translate{
     transform: translateX(0px);
@@ -202,22 +215,28 @@ nav a:hover:nth-child(1) {
 /* ************************FIN MENU*********************** */
 /* ******************************************************* */
 
+/* ************** */
+/* Recherche/info */
+/* ************** */
+.recherche{
+    margin: 20px 7% auto 7%;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(90deg, #00ffea 0%, #ae34ff 49%, #ff73ad 100%);
+}
 
+.recherche p{
+    margin: 0px auto 20px auto;
+}
 
 /* ******************************************************* */
 /* *************************MAIN************************** */
 /* ******************************************************* */
-.recherche{
-    text-align: center;
-    padding: 20px 20px 0px 20px;
-    background: linear-gradient(90deg, #00ffea 0%, #ae34ff 49%, #ff73ad 100%);
-    margin: 20px 7% auto 7%;
-}
 
 
 main{
-    background-color: rgba(17, 17, 17, 0.829);
-    margin: 40px 2% auto 2%;
+    background: linear-gradient(90deg, #00ffea63 0%, #ae34ff42 49%, #ff73ad6b 100%);
+    margin: 40px 2% 50px 2%;
 }
 
 .container{
@@ -228,11 +247,11 @@ main{
 }
 
 .barre{
-    margin: 0px;
+    margin: 0px auto auto auto;
     height: 2px;
-    width: 300px;
+    border-radius: 30px;
+    width: 70%;
     background: linear-gradient(90deg, #00ffea 0%, #ae34ff 49%, #ff73ad 100%);
-    margin: auto auto auto auto;
 }
 
 /* Chronologie *//* Chronologie */
@@ -242,6 +261,7 @@ main{
     padding: 0px;
     text-align: center;
     clip-path: polygon(98% 0%, 100% 50%, 98% 100%, 0 100%, 2% 50%, 0 0);
+    z-index:1;
 }
 
 .txt{

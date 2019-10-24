@@ -19,11 +19,12 @@ body{
 /* BALISEs DE BASE */
 a{
     text-decoration: none;
-    color: rgb(255, 145, 0);
+    color: rgb(0, 201, 167);
 }
 h1{
-    font-weight: 500;
-    margin: 0px; 
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px auto 0px auto;
 }
 
 h2{
@@ -73,15 +74,13 @@ input:hover{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 }
 
-.img{
-    margin-top: 10px;
-}
 
 .align{
     align-items: center;
     margin: auto auto auto auto;
     text-align: center;
 }
+
 .center{
 
     text-align: center;
@@ -89,6 +88,14 @@ input:hover{
 .title{
     text-align: left;
 }
+.align-menu{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 70px 70px 70px 70px 70px ;
+    padding: 0px;
+    align-items: center;
+}
+
 
 /* ******************************************************* */
 /* ************************HEADER************************* */
@@ -206,43 +213,52 @@ nav a:hover:nth-child(1) {
 /* ************** */
 /* Recherche/info */
 /* ************** */
+.recherche{
+    margin: 20px 7% auto 7%;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(90deg, #00ff88 0%,  #006eff 100%);
+}
+
+.recherche p{
+    margin: 0px auto 20px auto;
+}
+
+/* ******************************************************* */
+/* *************************MAIN************************** */
+/* ******************************************************* */
 .ano{
     font-size: 10px;
     font-weight: 300;   
     font-style: italic;
     margin-bottom: 17px;
 }
-.recherche{
-    text-align: center;
-    padding: 20px 20px 0px 20px;
-    background: linear-gradient(90deg, #00ff88 0%,  #006eff 100%);
-    margin: 20px 7% auto 7%;
-}
-
-/* ******************************************************* */
-/* *************************MAIN************************** */
-/* ******************************************************* */
-
 main{
-    background-color: rgba(17, 17, 17, 0.829);
+    background: linear-gradient(90deg, #00ff88a8 0%,  #006eff67 100%);
     margin: 40px 2% 50px 2%;
+    padding: 20px;
 }
 
 .container{
     padding: 20px;
-    margin-top: 90px;
-    text-align: center;  
+    text-align: center;
+     
 }
 
 .barre{
-    margin: 0px;
+    margin: 0px auto auto auto;
     height: 2px;
-    width: 300px;
+    border-radius: 30px;
+    width: 70%;
     background: linear-gradient(90deg, #00ff88 0%,  #006eff 100%);
-    margin: auto auto auto auto;
 }
 
-
+.txt{
+    background: rgba(0, 0, 0, 0.699);
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
 
 .align img{
     padding: 10px;
@@ -250,9 +266,7 @@ main{
 .align h1{
     margin-top: 30px;
 }
-span{    
-    background-color: #0400ff;
-}
+
 .align p {
     text-align: justify;
     margin: 5px 30px 30px 10px;
