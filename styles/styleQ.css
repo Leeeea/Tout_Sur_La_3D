@@ -173,7 +173,7 @@ nav a:hover:nth-child(1) {
 .align{
     display: grid;
     grid-auto-columns: auto;
-    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
     padding: 0px;
     align-items: center;
  }
