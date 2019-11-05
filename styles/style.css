@@ -5,6 +5,10 @@ body{
     font-weight: 300;
     color: white;
 }
+.twitter-tweet{
+    display: none;
+    
+}
 
 /* BACKGROUND */
 .bg{

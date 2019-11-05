@@ -85,7 +85,27 @@ h1{
     transition: 0.4s;
 }
 
+.grid-ordi{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "grid-ordi1 grid-ordi2";
+}
+.grid-ordi-tw{
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "grid-ordi-tw1 grid-ordi-tw2";
+}
 
+.twitter-tweet{
+    display: initial;
+    overflow: scroll;
+    height:500px;
+    margin-top: 90px;
+}
 /* ************************************************************** */
 /* PAGES DES MéTIERS : metier.html */ 
 

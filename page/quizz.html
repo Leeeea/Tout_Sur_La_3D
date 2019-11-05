@@ -71,6 +71,11 @@
     </div>
 
     <main>
+        <div class="compteur block degrade-head">
+            <div id="affichage"></div>
+            
+        </div>
+
         <div class="question txt">
             <h2>Question n°1 :</h2>
             <p>La première étape de création d'un film d'animation est la modélisation 3D des personnages.</p>
@@ -126,12 +131,22 @@
 
         // QUESTION QUESTION QUESTION
         $(document).ready(function() {
+           
             // question1  // question1  // question1
             $(".q1-v, .q2-f, .q3-a, .q3-c, .q4-f").click(function(e) {
                 $(this).css("background", '#fc6767');
+                
             });
+        
             $(".q1-f ,.q2-v ,.q3-b, .q4-v").click(function(e) {
                 $(this).css("background", 'springgreen');
+            });
+
+            var pts = 0;
+            $('.q1-f ,.q2-v ,.q3-b, .q4-v').on('click', function(){
+            pts = pts+1;
+            document.getElementById('affichage').innerHTML = pts;
+            
             });
         });
         
