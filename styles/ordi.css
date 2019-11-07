@@ -93,6 +93,7 @@ h1{
         "grid-ordi1 grid-ordi2";
 }
 .grid-ordi-tw{
+    align-items: center;
     display: grid;
     grid-template-columns: auto 250px;
     grid-auto-rows: auto;
@@ -103,8 +104,44 @@ h1{
 .twitter-tweet{
     display: initial;
     overflow: scroll;
-    height:500px;
+    height:550px;
     margin-top: 90px;
+    background: rgba(0, 0, 0, 0.856);
+    padding: 10px;
+}
+
+.live{
+    height: 20px;
+    background: blue;
+    width: 20px;
+    border-radius: 50%;
+    animation: live 3s alternate infinite;
+    margin: 10px;
+    align-items: center;
+}
+
+.tw{
+    display: flex;
+    align-items: center;
+}
+
+.tw h1{
+    align-items: center;
+    margin: 10px;
+    font-size: 30px;
+
+}
+
+@keyframes live{
+    0%{
+        background: blue;
+        
+    }
+    100%{
+        background: rgb(255, 0, 106);
+        transform: scale(1.5);
+
+    }
 }
 /* ************************************************************** */
 /* PAGES DES MéTIERS : metier.html */ 
