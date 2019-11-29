@@ -23,7 +23,8 @@
     <!-- ---------------------------- -->
     <nav class="shadow" id="nav">   
             <div class="align">
-                <a href="page/metier.html">Les Métiers</a>
+                <button onclick="menuf(this)"></button>
+                <a  href="page/metier.html">Les Métiers</a>
                 <a href="page/histoire.html">Histoire de la 3D</a>
                 <a href="page/film.html">Faire un film</a>
                 <a href="page/blog.html">Blog</a>
@@ -92,8 +93,9 @@
             <!-- ----------- -->
             <!-- Présntation -->
             <div class="container grid-ordi-tw1">
-                <a class="a-deco" href="page/metier.html"><h1>Les Métiers</h1></a>
+                <a  href="page/metier.html"><h1>Les Métiers</h1>
                 <div class="barre"></div>
+               
                 <div class="txt shadow">
                     <img src="img/metier.png" style="width:10%" class="hover">
                     <p>Vous trouverez sur ce site une lise des 
@@ -104,20 +106,25 @@
                     </p>   
                 </div>
 
-                <!-- Fiches -->
+                <!-- Fiches --> 
+                
                 <div class="flex grid">
+                    
                     <div class="fiche fi1 shadow">
-                        <img src="img/texture.jpg" style="width:100%">
+                        <a href="page/metier/texturing-artist.html"><img src="img/texture.jpg" style="width:100%"></a>
                         <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
                         <a href="page/metier/texturing-artist.html" ><h2>Texturing Artist</h2></a>
                     </div>
+
+                    
                     <div class="fiche fi2 shadow">
-                        <img src="img/illustrateur.jpg" style="width:100%">
+                        <a href="page/metier/illustrateur.html"><img src="img/illustrateur.jpg" style="width:100%"></a>
                         <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
                         <a href="page/metier/illustrateur.html" ><h2>Illustrateur</h2></a>
                     </div>
+                    
                     <div class="fiche fi3 shadow">
-                        <img src="img/lighting.jpg" style="width:100%">
+                        <a href="page/metier/lighting-artist.html"><img src="img/lighting.jpg" style="width:100%"></a>
                         <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
                         <a href="page/metier/lighting-artist.html" ><h2>Lighting Artist</h2></a>
                     </div>
@@ -151,10 +158,10 @@
             <!-- Faire Un Film -->
             <!-- ------------- -->
             <div class="container film grid-ordi1">
-                <a href="page/film.htm" ><h1>Faire Un Film</h1></a>
+                <a href="page/film.html" ><h1>Faire Un Film</h1></a>
                 <div class="barre"></div>
                 <div class="txt shadow">
-                    <a href="page/film.htm" ><img class="hover" src="img/movie.png" style="width:12%"></a> 
+                    <a href="page/film.html" ><img class="hover" src="img/movie.png" style="width:12%"></a> 
                     <p>Vous trouverez ci-dessous une frise sur les premières 
                     étapes qui permettent de réaliser un film. 
                     Si vous voulez 
@@ -165,17 +172,17 @@
                 <div>
                     <div class="degrade frise">
                         <input type="submit" id="etapeZ" value="Etape 1" class="shadow">
-                        <input type="submit" id="etapeY"value="Etape 1"class="shadow">
-                        <input type="submit"  id="etapeX" value="Etape 1"class="shadow">
+                        <input type="submit" id="etapeY"value="Etape 2"class="shadow">
+                        <input type="submit"  id="etapeX" value="Etape 3"class="shadow">
                         <input type="submit"  id="etapeQ" value="La Suite ..."class="shadow">
                     </div>
                     
-                    <div class="back Z" >ZZZLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut culpa obcaecati! Saepe consectetur qui ipsa blanditiis aut ratione harum reprehenderit quas cupiditate numquam voluptas consequuntur similique, quasi distinctio cumque.</div>
-                    <div class="back Y" >YYYLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut culpa obcaecati! Saepe consectetur qui ipsa blanditiis aut ratione harum reprehenderit quas cupiditate numquam voluptas consequuntur similique, quasi distinctio cumque.</div>
-                    <div class="back X" >XXXLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut culpa obcaecati! Saepe consectetur qui ipsa blanditiis aut ratione harum reprehenderit quas cupiditate numquam voluptas consequuntur similique, quasi distinctio cumque.</div>
+                    <div class="back Z">Créer une bible littéraire. Il s’agit d’un document qui regroupe toute les informations sur l’univers et l’histoire du film, ainsi un résumé physique et psychologique de chaque personnages (âge, caractère, ses hobby...)</div>
+                    <div class="back Y" >Dessiner les personnages en 2D sous toutes ses angles, qu’ils soient allongé, debout, à genoux mais aussi toutes ses humeurs: heureux, triste, en colère. Tout cela pour que le dessin des personnages en volume dans l’animation reflète leurs personnalités.</div>
+                    <div class="back X" >Modéliser les personnages en 3D grâce au croquis réalisé en 2D, mais attention les couleurs ne leurs sont pas encore appliqué cela arrivera plus tard lors de la réalisation du film.</div>
                     <div class="back Q" >
-                        <h2>Voir La Frise Complète</h2>
-                        <a href="">Click ici</a>
+                        <a href="page/film.html"><h2>Voir La Frise Complète</h2></a>
+                        <a href="page/film.html"><div></div></a>
                     </div>
                 </div>
             </div>
@@ -220,10 +227,9 @@
             <div class="barre"></div>
             <div class="txt shadow">
                 <p>Dans ce glossaire vous trouverez la définition des différents 
-                   mots liés à la 3D employés ce site. Si vous voulez toutes les voir rendez-vous sur la page </p>
-                <div class="button">
-                    <a href="page/glossaire.html" >Glossaire</a>
-                </div>
+                   mots liés à la 3D employés ce site. Si vous voulez toutes les voir rendez-vous sur notre page
+                   <a class="a-deco" href="page/histoire.html">Glossaire ...</a>
+                </p>
                 
                 <div class="flex grid">
                     <div class="fiche fi1 shadow">
@@ -261,6 +267,11 @@
     <script>
         // MENU MENU MENU
         function menu(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
+
+        function menuf(){
             document.querySelector("nav").
             classList.toggle("translate")
         }
@@ -312,6 +323,7 @@
                     $(".D").slideUp("fast");
                 }
                 e.preventDefault();
+               
             });
 
 
