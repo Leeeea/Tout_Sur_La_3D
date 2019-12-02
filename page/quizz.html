@@ -22,13 +22,14 @@
     <!-- ---------MENU GAUCHE-------- -->
     <!-- ---------------------------- -->
     <nav class="shadow" id="nav">   
-            <div class="align">               
+            <div class="align">    
+                <!-- <button onclick="menuf(this)"></button>            -->
                 <a href="../index.html">Accueil</a>
-                <a href="./page/metier.html">Les Métiers de la 3D</a>
+                <a href="../page/metier.html">Les Métiers de la 3D</a>
                 <a href="../page/histoire.html">Histoire de l'animation</a>
                 <a href="../page/film.html">Faire un film</a>
                 <a href="../page/blog.html">Blog</a>
-                <a href="./page/glossaire.html">Glossaire</a>
+                <a href="../page/glossaire.html">Glossaire</a>
  
             </div>
     </nav>
@@ -71,21 +72,24 @@
     </div>
 
     <main>
-        <div class="compteur block degrade-head">
+        <!-- <div class="compteur block degrade-head">
             <div id="affichage"></div>
             
-        </div>
+        </div> -->
 
         <div class="question txt">
-            <h2>Question n°1 :</h2>
+            <p>La page quizz est encore en construction. Elle sera prochainement 
+                disponible encore un peu de patience ;)
+            </p>
+            <!-- <h2>Question n°1 :</h2>
             <p>La première étape de création d'un film d'animation est la modélisation 3D des personnages.</p>
             <div class="button">
                 <button class="q1-v">Vrai</button>
                 <button class="q1-f">Faux</button>
-            </div>
+            </div> -->
         </div>  
         
-        <div class="question ">
+        <!-- <div class="question ">
             <h2>Question n°2 :</h2>
             <p>Un texturing artist doit créer ses textures le plus souvent à partir de zero.</p>
             <div class="button">
@@ -111,7 +115,7 @@
                 <button class="q4-v">Vrai</button>
                 <button class="q4-f">Faux</button>
             </div>
-        </div>
+        </div> -->
     </main>
     <!-- FOOTER -->
     <footer>
@@ -125,6 +129,10 @@
     <script>
         // MENU MENU MENU
         function menu(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
+        function menuf(){
             document.querySelector("nav").
             classList.toggle("translate")
         }

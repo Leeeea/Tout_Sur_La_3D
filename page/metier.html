@@ -23,10 +23,10 @@
     <!-- ---------------------------- -->
     <nav class="shadow">   
             <div class="align">
+                <button onclick="menuf(this)"></button>
                 <a href="../index.html">Accueil</a>
                 <a href="../page/histoire.html">Histoire de l'animation</a>
                 <a href="../page/film.html">Faire Un Film</a>
-            
                 <a href="../page/blog.html">Blog</a>
                 <a href="./page/glossaire.html">Glossaire</a>
                 <a href="../page/quizz.html">Quizz</a>
@@ -271,6 +271,10 @@
     <script>
         // MENU MENU MENU
         function menu(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
+        function menuf(){
             document.querySelector("nav").
             classList.toggle("translate")
         }
