@@ -76,7 +76,7 @@ input:hover{
 
 
 .align{
-    display: grid;
+/*     display: grid; */
     grid-auto-columns: auto;
     grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
     padding: 0px;
@@ -93,7 +93,7 @@ input:hover{
 .align-menu{
     display: grid;
     grid-auto-columns: auto;
-    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
     padding: 0px;
     align-items: center;
 }
