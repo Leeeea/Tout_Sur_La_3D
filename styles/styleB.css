@@ -16,7 +16,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: springgreen;
 }
 
 h1{
@@ -230,7 +230,10 @@ main{
 }
 
 
-
+#mapid { 
+    height:300px; 
+    margin-bottom: 30px;
+}
 
 
 /* ******************************************************** */

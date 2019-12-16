@@ -9,11 +9,20 @@
     Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700,800" 
     rel="stylesheet">
   
-    <link rel="stylesheet" href="../../styles/styleB.css">
+    <link rel="stylesheet" href="../../styles/style_article.css">
     <link rel="stylesheet" media="screen and (min-width: 800px)" href="../../styles/ordi.css">
 
     <link rel="icon"  href="../../img/logo.png"/>   
     <title>Tout Sur La 3D</title>
+
+
+    <!-- CARTE -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
 </head>
 <body>
      <!-- ---------BACKGROUND-------- -->
@@ -22,14 +31,14 @@
     <!-- ---------MENU GAUCHE-------- -->
     <!-- ---------------------------- -->
     <nav class="shadow" id="nav">   
-            <div class="align">               
-                <a href="../../index.html">Accueil</a>
-                <a href="../../page/metier.html">Les Métiers de la 3D</a>
-                <a href="../../page/histoire.html">Histoire de l'animation</a>
-                <a href="../../page/film.html">Faire un film</a>
-                <a href="../../page/blog.html">Blog</a>
-                <a href="../../page/glossaire.html">Glossaire </a>
-                <a href="../../page/quizz.html">Quizz</a>
+            <div class="align">       
+                <button onclick="menuf(this)"></button>        
+                <a href="../index.html">Accueil</a>
+                <a href="../page/metier.html">Les Métiers de la 3D</a>
+                <a href="../page/histoire.html">Histoire de l'animation</a>
+                <a href="../page/film.html">Faire un film</a>
+                <a href="../page/glossaire.html">Glossaire </a>
+                <!-- <a href="../page/quizz.html">Quizz</a> -->
             </div>
     </nav>
     <!-- ---------------------------- -->
@@ -75,9 +84,37 @@
             <div class="txt">
                 <img src="../../img/ecole.jpg" style="width:100%" class="img">
                 <h1 class="text-center">L'ESMA, l'école de la 3D</h1>
-                <p class="text-justify">École d’arts appliqués reconnue à l’international pour la qualité de ses enseignements artistiques, l’ESMA propose des formations en Design d’Espace, Design Graphique et surtout en Cinéma d’Animation 3D. <br><br><br>
+                <p class="text-justify">École d’arts appliqués reconnue à l’international pour la qualité de ses enseignements artistiques, l’ESMA propose des formations en Design d’Espace, Design Graphique et surtout en Cinéma d’Animation 3D. <br><a class="carte a" href="#mapid">Carte des écoles</a><br><br>
 
-Tout d’abord, les étudiants auront une année de classe préparatoire, appelée la Prépa Entertainment. Cette dernière est une passerelle entre un baccalauréat (toutes séries) et les formations aux métiers du Cinéma d’Animation et des Effets Spéciaux. Elle prévoit un renforcement de l’apprentissage du dessin, avec notamment de l’étude anatomique et de la création de character design et propose également des modules plus spécifiques au domaine du Cinéma d’Animation 3D (le traitement numérique, le storyboard, la photographie et la sculpture). <br><br>
+
+        <!-- CARTE -->
+        <div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').setView([45.745306, 4.817142],2);
+        </script>
+        <script>
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            accessToken: 'your.mapbox.access.token'
+            }).addTo(mymap);
+
+
+            var lyon = L.marker([45.745306, 4.817142]).addTo(mymap);
+            var Toulouse = L.marker([43.529154, 1.489498]).addTo(mymap);
+            var Nantes = L.marker([47.204678, -1.567339]).addTo(mymap);
+            var Montpellier = L.marker([43.638199, 3.829657]).addTo(mymap);
+            var Montréal = L.marker([45.513118, -73.571492]).addTo(mymap);
+
+            lyon.bindPopup("<b>Lyon</b>").openPopup();
+            Toulouse.bindPopup("<b>Toulouse</b>").openPopup();
+            Nantes.bindPopup("<b>Nantes</b>").openPopup();
+            Montpellier.bindPopup("<b>Montpellier</b>").openPopup();
+            Montréal.bindPopup("<b>Montréal</b>").openPopup();
+        </script>
+
+<p>     Tout d’abord, les étudiants auront une année de classe préparatoire, appelée la Prépa Entertainment. Cette dernière est une passerelle entre un baccalauréat (toutes séries) et les formations aux métiers du Cinéma d’Animation et des Effets Spéciaux. Elle prévoit un renforcement de l’apprentissage du dessin, avec notamment de l’étude anatomique et de la création de character design et propose également des modules plus spécifiques au domaine du Cinéma d’Animation 3D (le traitement numérique, le storyboard, la photographie et la sculpture). <br><br>
 A grand renfort de cours de dessin, d’anatomie, d’arts visuels et d’ateliers numériques et spécifiques, la Prépa Entertainment est idéale pour parfaire ses connaissances techniques et améliorer sa culture artistique. Cette année préparatoire se conclut par un examen terminal ainsi qu’un grand oral (présentation d’un dossier des travaux de l’année et d’un projet final) qui permettent d’évaluer les acquis de l’étudiant. Ainsi les étudiants seront préparés au mieux pour intégrer le “Cycle professionnel en Cinéma d’Animation 3D et Effets Spéciaux”. <br><br>
 
 Le cycle professionnel en cinéma d’animation 3D et effets spéciaux permet aux étudiants, sur une durée de 4 ans, de maîtriser toutes les techniques d’animation et les étapes de production d’un projet d’animation intégrant des images numériques : <br><br>
@@ -86,12 +123,12 @@ en production : modélisation 3D, compositing, animation 3D …
 et en post-production : éclairage, effets spéciaux ... <br><br>
 Au cours de cette formation, les étudiants apprendront entre autre, à prendre en main et à maîtriser les principaux logiciels 3D : Maya, Houdini, Marvelous … Cet enseignement étant reconnue des professionnels des quatre coins du monde, les étudiants auront l’opportunité de faire évoluer leur vie professionnelle dans l’hexagone ou à l’international. <br><br>
 L’ESMA enregistre un taux de placement en entreprise de plus de 93%, seulement 6 mois après l’obtention du diplôme, avec plus de 800 diplômés intégrés aux plus grands studios mondiaux depuis 2002.
-
                         
                 </p>
             </div>
         </div>
-       
+        
+        
     </main>
     <!-- FOOTER -->
     <footer>
@@ -108,17 +145,19 @@ L’ESMA enregistre un taux de placement en entreprise de plus de 93%, seulement
             document.querySelector("nav").
             classList.toggle("translate")
         }
+        function menuf(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
 
-        // QUESTION QUESTION QUESTION
-        $(document).ready(function() {
-            // question1  // question1  // question1
-            $(".q1-v, .q2-f, .q3-a, .q3-c, .q4-f").click(function(e) {
-                $(this).css("background", '#fc6767');
-            });
-            $(".q1-f ,.q2-v ,.q3-b, .q4-v").click(function(e) {
-                $(this).css("background", 'springgreen');
-            });
-        });
+
+        // // QUESTION QUESTION QUESTION
+        // $(document).ready(function() {
+        //     $("#mapid").hide();
+        //     $(".carte").click( function(){
+        //         $("#mapid").show();
+        //     });
+        // });
         
 
     </script>   
