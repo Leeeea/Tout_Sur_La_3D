@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link 
+    href="https://fonts.googleapis.com/css?family=Hind+
+    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700,800" 
+    rel="stylesheet">
+  
+    <link rel="stylesheet" href="../../styles/style_article.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../../styles/ordi.css">
+
+    <link rel="icon"  href="../../img/logo.png"/>   
+    <title>Tout Sur La 3D</title>
+
+
+    <!-- CARTE -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+</head>
+<body>
+     <!-- ---------BACKGROUND-------- -->
+    <img class="bg" src="../../img/head.jpg">  
+    <!-- ---------------------------- -->
+    <!-- ---------MENU GAUCHE-------- -->
+    <!-- ---------------------------- -->
+    <nav class="shadow" id="nav">   
+            <div class="align">       
+                <button onclick="menuf(this)"></button>        
+                <a href="../../index.html">Accueil</a>
+                <a href="../../page/metier.html">Les Métiers de la 3D</a>
+                <a href="../../page/histoire.html">Histoire de l'animation</a>
+                <a href="../../page/film.html">Faire un film</a>
+                <a href="../../page/glossaire.html">Glossaire </a>
+                <!-- <a href="../page/quizz.html">Quizz</a> -->
+            </div>
+    </nav>
+    <!-- ---------------------------- -->
+    <!-- --------- FIN  MENU--------- -->
+    <!-- ---------------------------- -->
+
+
+    <!-- ---------------------------- -->
+    <!-- -----------HEADER----------- -->
+    <!-- ---------------------------- -->
+    <header id="haut"> 
+        <a href="../../index.html" ><img src="../../img/logo.png" style="width:15%"><br></a>
+            <div class="degrade-head"></div>
+    </header> 
+    <!-- ---------------------------- -->
+    <!-- ---------FIN HEADER--------- -->
+    <!-- ---------------------------- -->
+   
+
+    <!-- ---------------------------- -->
+    <!-- ---------MENU BARRE--------- -->
+    <!-- ---------------------------- -->
+    <div class="menu shadow"> 
+        <button class="position" onclick="menu(this)">|||</button>       
+    </div>
+    <!-- ---------------------------- -->
+    <!-- ---------FIN  BARRE--------- -->
+    <!-- ---------------------------- -->
+    
+
+
+    <!-- ---------------------------- -->
+    <!-- ------------main------------ -->
+    <!-- ---------------------------- -->
+    <div class="recherche shadow">
+        <h1 class="blur1">Tout Sur La 3D</h1>
+        <p class="blur2">Répertoire d'informations sur l'animation 3D</p>
+        <img src="../../img/seo.png" style="width:13%" class="img">
+    </div>
+
+    <main>
+        <div class="">
+            <div class="txt">
+                <img src="../../img/ecole.jpg" style="width:100%" class="img">
+                <h1 class="text-center">L'ESMA, l'école de la 3D</h1>
+                <p class="text-justify">École d’arts appliqués reconnue à l’international pour la qualité de ses enseignements artistiques, l’ESMA propose des formations en Design d’Espace, Design Graphique et surtout en Cinéma d’Animation 3D. <br><a class="carte a" href="#mapid">Carte des écoles</a><br><br>
+
+
+        <!-- CARTE -->
+        <div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').setView([45.745306, 4.817142],2);
+        </script>
+        <script>
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            accessToken: 'your.mapbox.access.token'
+            }).addTo(mymap);
+
+
+            var lyon = L.marker([45.745306, 4.817142]).addTo(mymap);
+            var Toulouse = L.marker([43.529154, 1.489498]).addTo(mymap);
+            var Nantes = L.marker([47.204678, -1.567339]).addTo(mymap);
+            var Montpellier = L.marker([43.638199, 3.829657]).addTo(mymap);
+            var Montréal = L.marker([45.513118, -73.571492]).addTo(mymap);
+
+            lyon.bindPopup("<b>Lyon</b>").openPopup();
+            Toulouse.bindPopup("<b>Toulouse</b>").openPopup();
+            Nantes.bindPopup("<b>Nantes</b>").openPopup();
+            Montpellier.bindPopup("<b>Montpellier</b>").openPopup();
+            Montréal.bindPopup("<b>Montréal</b>").openPopup();
+        </script>
+
+<p>   
+  
+             </p>
+            </div>
+        </div>
+        
+        
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="menu-footer ">
+            <a href="#haut" class="a-footer">Retour haut de la page</a>
+        </div>
+        <hr>
+        <p class="p-footer">Copyright © 2019 - Tout Sur La 3D/Animatic - Tous droits réservés</p>
+    </footer>
+    <script src="../../jquery.js"></script>
+    <script>
+        // MENU MENU MENU
+        function menu(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
+        function menuf(){
+            document.querySelector("nav").
+            classList.toggle("translate")
+        }
+
+
+        // // QUESTION QUESTION QUESTION
+        // $(document).ready(function() {
+        //     $("#mapid").hide();
+        //     $(".carte").click( function(){
+        //         $("#mapid").show();
+        //     });
+        // });
+        
+
+    </script>   
+        
+</body>
+</html>
 
