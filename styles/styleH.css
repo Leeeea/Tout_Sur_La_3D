@@ -1,3 +1,6 @@
+* {
+    outline: 0;
+    }
 body{
     background-color: #424242;
     margin:0px;
@@ -23,23 +26,47 @@ h1{
     margin: 20px auto 0px auto;
 }
 h2{
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 10px;
     margin: 0%;
 }
 p{margin: 0%;}
 
-input{
-    background: transparent;
-    padding: 10px;
+a{
+    text-decoration: none;
     color: white;
+}
+.ano{
+    font-size: 10px;
+    font-weight: 300;   
+    font-style: italic;
+    margin-bottom: 17px;
+}
+
+
+/* BUTON *//* BUTON *//* BUTON */
+/* BUTON *//* BUTON *//* BUTON *//* BUTON */
+input{
+    background: rgb(15, 15, 15);
+    color: rgb(15, 15, 15);
+    height: 20px;
+    width: 20px;
+    margin: auto 1% auto 1%;
+  
     border-radius: 50px;
     border:none;
 }
-
 input:hover{
-    transform: translateX(10px);
+    background: #ae34ff; 
+    color: #ae34ff;
     transition: 0.4s;
 }
+.active{
+    background: #5b79ff;
+    color: #5b79ff;
+}
+
 .button{
     background: transparent;
     padding: 5px;
@@ -58,7 +85,7 @@ input:hover{
     transition: 0.4s;
     
 }
-
+/* BUTON *//* BUTON *//* BUTON *//* BUTON */
 
 /* OUTILS *//* OUTILS *//* OUTILS *//* OUTILS */
 .flex{
@@ -101,6 +128,7 @@ header{
 @keyframes color{
     0%{
         background: #00ffea;
+        
     }
     50%{
         background: #ae34ff;
@@ -108,20 +136,19 @@ header{
     }
     100%{
         background: #ff73ad;
+        
+        
     }
 }
 @keyframes colortxt{
     0%{
-        color: black;
+        color: #00ffea;
     }
     50%{
-        color: black;
-
+        color: #ae34ff;
     }
     100%{
-
-        color: black;
-
+        color: #ff73ad;
     }
 }
 /* ******************************************************* */
@@ -261,7 +288,7 @@ nav a:hover:nth-child(1) {
 
 main{
     background: linear-gradient(90deg, #00ffea63 0%, #ae34ff42 49%, #ff73ad6b 100%);
-    margin: 40px 2% 50px 2%;
+    margin: auto auto 50px auto;
 }
 
 .container{
@@ -282,24 +309,43 @@ main{
 /* Chronologie *//* Chronologie */
 .frise{
     margin-top: 20px;
-    /* border-radius:50px; */
     padding: 0px;
     text-align: center;
-    clip-path: polygon(98% 0%, 100% 50%, 98% 100%, 0 100%, 2% 50%, 0 0);
-    z-index:1;
+}
+
+
+.bouge{
+    transform: translateX(300px);
+}
+.chrono{
+    margin: auto auto auto auto;
 }
 
 .txt{
     background: rgba(0, 0, 0, 0.856);
     text-align: center;
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
+}
+.txtinfo{
+    background: rgba(0, 0, 0, 0.856);
+    margin: 20px 1% auto 1%;
+    height:500px;
+    padding: 10px;
 }
 
-.degrade-frise{
-    animation: color 10s alternate infinite;
-}
 
+.gridinfo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:  "textEtape""imag";
+    align-items: center;
+}
+.imag{
+    width: 60%;
+    margin: auto;
+}
 /* Voir aussi *//* Voir aussi *//* Voir aussi */
 .voir-aussi{
     margin-top: 90px;

@@ -55,7 +55,6 @@ position: sticky;
     padding: 5px;
     margin: 10px 30% 10px 30%;
     border-radius:50px; 
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
 
 }
 .button a {
@@ -63,11 +62,7 @@ position: sticky;
     font-size: 20px; 
 }
 
-.button:hover{
-    background: rgb(176, 91, 255);
-    transform: scale(1.1);
-    transition: 0.4s;   
-}
+
 
 /* ******************************************************* */
 /* ************************HEADER************************* */
@@ -144,7 +139,9 @@ nav button:hover{
     background: rgba(255, 255, 255, 0.582);
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
-  
+.croix{
+    margin: 15px 15px auto auto ;
+}  
 nav a {
     color: white;
     float: left;
@@ -198,13 +195,12 @@ nav a:hover:nth-child(2) {
 }
 .menu button {
     color: white;
-    float: right;
+    float: left;
     padding: 10px 16px;
     text-decoration: none;
     font-size: 20px; 
     background-color: transparent;
     border: none;
-    margin: 0px;
 }
 .align{
     display: grid;
@@ -249,22 +245,24 @@ main{
 
 /* compteur */
 .compteur{
-    background: #f2f2f2;
+    background: #ff4f30ab;
     position: fixed;
-    height: 100px;
-    width: 100px;
-    left:10px;
-    top:10px;
+    height: 70px;
+    width: 70px;
+    right: 1%;
+    bottom:2%;
     border-radius: 50%;
     z-index: 1;
-}
-
-.compteur div{
     color: #f2f2f2;
     font-weight: 800;
-    font-size: 40px;
-    margin: 20px auto auto 40px;
-    
+    font-size: 20px;
+   
+  
+}
+.compteur>p{
+    position: fixed;
+    right: 5%;
+    bottom:6.5%;
 }
 
 /* QUESTIONS */
@@ -274,20 +272,38 @@ main{
     background: rgba(0, 0, 0, 0.856);
     margin: 20px 20px auto 20px;
 }
+
 .button{
     margin: 20px 10% auto 10%;
 }
+
 button{
-    padding: 20px 30px 20px 30px; 
+
     background: #424242;
     border: none;
-    margin: 15px auto auto auto ;
+    margin: 0px auto auto auto ;
     color: white;
+}
+
+.butt{
+    padding: 20px 30px 20px 30px; 
 }
 
 button:hover{
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+.rep{
+   padding: 20px;
+   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.712);
+
+}
+.colorV{
+    color: springgreen;
+}
+.colorF{
+    color:#ff4f30;
 }
 /* ******************************************************** */
 /* *********************** FOOTER ************************ */

@@ -7,11 +7,28 @@ h1{
 .button{
     margin: 10px 35% 10px 35%;
 }
+
 /* ************** */
 /* Recherche/info */
 /* ************** */
 
-
+.rond{
+    display: flex;
+    margin: auto 45% auto 45%;
+}
+.frise{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.txtinfo{
+    
+    padding-bottom: 100px;
+    margin: 20px 1% auto 1%;
+    padding: 10px;
+}
 .bulle{
   
     margin: 20px 4px 0px 4px;
@@ -152,3 +169,21 @@ h1{
 /* ************************************************************** */
 /* PAGES DES MéTIERS : metier.html */ 
 
+.gridinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imag textEtape";
+    align-items: center;
+}
+
+.title{
+    grid-area: title;
+}
+.imag{
+    width: 95%;
+}
+
+.textEtape{
+    grid-area:textEtape;
+    margin: 10px;
+}

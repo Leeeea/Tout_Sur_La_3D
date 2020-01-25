@@ -250,7 +250,7 @@ nav a:hover:nth-child(1) {
 
 main{
     background: linear-gradient(90deg, #00ffb369 0%, #1900ff7c 100%);
-    margin: 40px 2% 50px 2%;
+
 }
 
 .container{
@@ -273,8 +273,8 @@ main{
 .txt{
     background: rgba(0, 0, 0, 0.856);
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 20px;
+    padding:10px;
 }
 .fiche{
     padding: 5px;
