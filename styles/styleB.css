@@ -122,7 +122,11 @@ nav a {
     text-decoration: none;
     font-size: 20px; 
 }
-
+nav a:hover:nth-child(7) {
+    background-color: #00eeff;
+    color: black;
+    transition-duration: 0.4s;
+}
 nav a:hover:nth-child(6) {
     background-color: #0077ff;
     color: black;
@@ -197,6 +201,7 @@ nav a:hover:nth-child(1) {
     padding: 20px 20px 20px 20px;
     background: linear-gradient(90deg, #3700ff 0%, #ff9100 100%);
 }
+
 
 .recherche p{
     margin: 0px auto 20px auto;

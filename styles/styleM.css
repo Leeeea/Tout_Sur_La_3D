@@ -152,6 +152,11 @@ nav a {
     text-decoration: none;
     font-size: 20px; 
 }
+nav a:hover:nth-child(7) {
+    background-color: #91ff00;
+    color: black;
+    transition-duration: 0.4s;
+}
 nav a:hover:nth-child(6) {
     background-color: #00ff0d;
     color: black;

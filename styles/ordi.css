@@ -187,3 +187,16 @@ h1{
     grid-area:textEtape;
     margin: 10px;
 }
+
+
+/* Blog */
+.gridblog{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
+    grid-template-areas: 
+        "fi1 fi2" 
+        "fi3 fi3";
+}
+
+/* video */
