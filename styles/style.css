@@ -415,26 +415,35 @@ main{
     clip-path: polygon(98% 0%, 100% 50%, 98% 100%, 0 100%, 2% 50%, 0 0);
 }
 
-
+/* Logiciel  Logiciel  Logiciel  Logiciel*/
+.logiciel{
+    margin-top: 60px;
+}
+.gridlog{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto;
+    grid-template-areas: 
+        "fi1"
+        "fi2";
+}
+.text-left{
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+    padding: 30px;
+}
 
 /* Glossaire *//* Glossaire *//* Glossaire */
 .glossaire{
     margin-top: 70px;
 }
 
-/* QUIZZ */
-.parti{
-    background: #c70dff;
-    padding: 10px;
-    border-radius: 50px;
-}
-.parti:hover{
-    background: springgreen;
-    color: black;
-    transform: scale(1.02);
-    transition: 0.4s;
-    
-}
+
 /* ******************************************************** */
 /* *********************** FOOTER ************************ */
 /* ******************************************************** */

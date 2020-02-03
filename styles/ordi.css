@@ -200,3 +200,10 @@ h1{
 }
 
 /* video */
+.gridlog{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto;
+    grid-template-areas: 
+        "fi1 fi2";
+}
