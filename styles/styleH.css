@@ -346,6 +346,7 @@ main{
     grid-template-rows: auto auto;
     grid-template-areas:  "textEtape""imag";
     align-items: center;
+     overflow: hidden;
 }
 .imag{
     width: 60%;
