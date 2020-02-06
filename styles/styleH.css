@@ -337,6 +337,7 @@ main{
     margin: 20px 1% auto 1%;
     height:500px;
     padding: 10px;
+       overflow: hidden;
 }
 
 
