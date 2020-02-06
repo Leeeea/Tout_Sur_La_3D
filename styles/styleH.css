@@ -292,7 +292,7 @@ nav a:hover:nth-child(1) {
 
 
 main{
-    background: linear-gradient(90deg, #00ffea63 0%, #ae34ff42 49%, #ff73ad6b 100%);
+/*     background: linear-gradient(90deg, #00ffea63 0%, #ae34ff42 49%, #ff73ad6b 100%); */
     margin: auto auto 50px auto;
 }
 
