@@ -15,6 +15,51 @@
     <link rel="icon"  href="../img/logo.png"/>   
     <title>Tout Sur La 3D</title>
 </head>
+<style>
+     
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+        
+ 
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Content */
+        .content {
+       
+          padding: 10px;
+        }
+        
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer;
+        }
+        
+        .btn:hover {
+          background-color: #91ff00;
+          transition: 0.4s;
+        }
+        
+        .btn.active {
+          background-color: #00ff55;
+          color: black;
+        }
+        </style>
 <body>
      <!-- ---------BACKGROUND-------- -->
     <img class="bg" src="../img/head.jpg">  
@@ -71,25 +116,33 @@
     </div>
 
     <main>
-        <div class="gridblog">
-            <div class="txt fi1">
-                <a href="article/logiciel.html"><img src="../img/software.jpg" style="width:100%" class="img">
-                <h1 class="text-left">Article</h1>
-                <h2 class="text-left">Top 3 des logiciles de L'aniamtion 3D</h2></a>
-                <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore laborum consequuntur officia iusto facilis quasi alias quos.</p>
-                <a class="text-left" href="article/logiciel.html">Voir la suite</a>
-            </div>
+        
 
-            <div class="txt fi2">
-                <a  href="video/logvideo.html"><img src="../img/video.jpg" style="width:100%" class="img">
-                <h1 class="text-left">Videos</h1>
-                <h2 class="text-left">Les Tutos</h2></a>
-                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet quos sequi dolores expedita, aspernatur, illo distinctio quo dolorum cumque impedit. Incidunt, dolor. Fugit tenetur molestiae temporibus fuga unde aspernatur.</p>
-                <a class="text-left" href="video/logvideo.html">Voir la suite</a>
-            </div>
-
+      <div class="gridlog">
+        <div class="txt fi1">
+          <a href="article/logiciel.html"><img src="../img/software.jpg" style="width:100%" class="img">
+          <h1 class="text-left">Article</h1>
+          <h2 class="text-left">Top 3 des logiciles de L'aniamtion 3D</h2></a>
+          <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore laborum consequuntur officia iusto facilis quasi alias quos.</p>
+          <a class="text-left" href="article/logiciel.html">Voir la suite</a>
         </div>
-       
+
+        <div class="txt fi2">
+          <a  href="video/logvideo.html"><img src="../img/video.jpg" style="width:100%" class="img">
+          <h1 class="text-left">Videos</h1>
+          <h2 class="text-left">Les Tutos</h2></a>
+          <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet quos sequi dolores expedita, aspernatur, illo distinctio quo dolorum cumque impedit. Incidunt, dolor. Fugit tenetur molestiae temporibus fuga unde aspernatur.</p>
+          <a class="text-left" href="video/logvideo.html">Voir la suite</a>
+        </div>
+
+        <div class="txt fi3">
+            <a  href="video/logicielliste.html"><img src="../img/video.jpg" style="width:100%" class="img">
+            <h1 class="text-left">Liste</h1>
+            <h2 class="text-left">Les logiciels de l'animation 3D</h2></a>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet quos sequi dolores expedita, aspernatur, illo distinctio quo dolorum cumque impedit. Incidunt, dolor. Fugit tenetur molestiae temporibus fuga unde aspernatur.</p>
+            <a class="text-left" href="video/logicielliste.html">Voir la suite</a>
+          </div>
+      </div> 
     </main>
     <!-- FOOTER -->
     <footer>
@@ -100,6 +153,7 @@
         <p class="p-footer">Copyright © 2019 - Tout Sur La 3D/Animatic - Tous droits réservés</p>
     </footer>
     <script src="../jquery.js"></script>
+
     <script>
         // MENU MENU MENU
         function menu(){
@@ -110,20 +164,8 @@
             document.querySelector("nav").
             classList.toggle("translate")
         }
-
-        // QUESTION QUESTION QUESTION
-        $(document).ready(function() {
-            // question1  // question1  // question1
-            $(".q1-v, .q2-f, .q3-a, .q3-c, .q4-f").click(function(e) {
-                $(this).css("background", '#fc6767');
-            });
-            $(".q1-f ,.q2-v ,.q3-b, .q4-v").click(function(e) {
-                $(this).css("background", 'springgreen');
-            });
-        });
-        
-
     </script>   
-        
+    
+   
 </body>
 </html>

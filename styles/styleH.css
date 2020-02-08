@@ -37,35 +37,10 @@ a{
     text-decoration: none;
     color: white;
 }
-.ano{
-    font-size: 10px;
-    font-weight: 300;   
-    font-style: italic;
-    margin-bottom: 17px;
-}
 
 
 /* BUTON *//* BUTON *//* BUTON */
 /* BUTON *//* BUTON *//* BUTON *//* BUTON */
-input{
-    background: rgb(15, 15, 15);
-    color: rgb(15, 15, 15);
-    height: 20px;
-    width: 20px;
-    margin: auto 1% auto 1%;
-  
-    border-radius: 50px;
-    border:none;
-}
-input:hover{
-    background: #ae34ff; 
-    color: #ae34ff;
-    transition: 0.4s;
-}
-.active{
-    background: #5b79ff;
-    color: #5b79ff;
-}
 
 .button{
     background: transparent;
@@ -124,7 +99,7 @@ header{
 
 }
 
-
+/* ANIMATION */
 @keyframes color{
     0%{
         background: #00ffea;
@@ -286,30 +261,160 @@ nav a:hover:nth-child(1) {
     margin: 0px auto 20px auto;
 }
 
+
+/* ******************************************************* */
+/************************* Slider & Images STYLE-********* */
+/* ******************************************************* */
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.829);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #7d6a8a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #2f55ff;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+/* ******************************************************* */
+/*  ************FIN Slider & Images STYLE*******************/
+/* ******************************************************* */
+
+
 /* ******************************************************* */
 /* *************************MAIN************************** */
 /* ******************************************************* */
-
-
 main{
     background: linear-gradient(90deg, #00ffea63 0%, #ae34ff42 49%, #ff73ad6b 100%);
     margin: auto auto 50px auto;
 }
 
-.container{
+.containerMain{
     padding: 20px;
     margin-top: 90px;
     text-align: center;
+
    
 }
 
-.barre{
-    margin: 0px auto auto auto;
-    height: 2px;
-    border-radius: 30px;
-    width: 70%;
-    background: linear-gradient(90deg, #00ffea 0%, #ae34ff 49%, #ff73ad 100%);
-}
 
 /* Chronologie *//* Chronologie */
 .frise{
@@ -318,80 +423,20 @@ main{
     text-align: center;
 }
 
-
-.bouge{
-    transform: translateX(300px);
-}
 .chrono{
     margin: auto auto auto auto;
 }
-
 .txt{
     background: rgba(0, 0, 0, 0.856);
     text-align: center;
-    margin-top: 40px;
+  
     padding: 10px;
-}
-.txtinfo{
-    background: rgba(0, 0, 0, 0.856);
-    margin: 20px 1% auto 1%;
-    height:500px;
-    padding: 10px;
-       overflow: hidden;
-}
-
-
-.gridinfo{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:  "textEtape""imag";
-    align-items: center;
-    overflow: hidden;
-}
-.imag{
-    width: 60%;
-    margin: auto;
 }
 /* Voir aussi *//* Voir aussi *//* Voir aussi */
 .voir-aussi{
     margin-top: 90px;
-
 }
 
-/* Les métiers *//* Les métiers *//* Les métiers */
-.fiche{
-    padding: 5px;
-    margin: 30px 20px auto 20px;
-    text-align: center;
-}
-
-.fiches{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-rows: auto ;
-    grid-template-areas: 
-        "fi1"
-        "fi2";
-}
-.fi3{
-    display: none;
-}
-
-.fiche:nth-child(1){
-    background: #ae34ff;
-}
-.fiche:nth-child(2){
-    background: #ff73ad;
-}
-.fiche:nth-child(3){
-    background: #00ffea;
-}
-
-.fiche:hover{
-    transform: scale(1.02);
-    transition: 0.4s;
-}
 
 /* ******************************************************** */
 /* *********************** FOOTER ************************ */

@@ -1,86 +1,26 @@
-$(document).ready(function() {
-    $('input').click(function(){
-        $(this).addClass("active");
-    });
-    // ChronologieHistoire
-    $(".B").hide();
-    $(".C").hide();
-    $(".D").hide();
-    $(".E").hide();
-    $(".F").hide();
-    $(".G").hide();
-    $(".H").hide();
-    $(".I").hide();
-    $(".J").hide();
-    $("#etapeA").click(function(e) {
-        $(".A").is(":hidden");
-            $(".A").slideDown("slow");
-            $(".B,.C,.D,.E,.F,.G,.H,.I,.J").hide(); 
-        e.preventDefault();
-    });
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    $("#etapeB").click(function(e) {
-        $(".B").is(":hidden");
-            $(".B").slideDown("slow");
-            $(".A,.C,.D,.E,.F,.G,.H,.I,.J").hide(); 
-        e.preventDefault();
-    });
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    $("#etapeC").click(function(e) {
-        $(".C").is(":hidden");
-        $(".C").slideDown("slow");
-        $(".B,.A,.D,.E,.F,.G,.H,.I,.J").hide(); 
-        e.preventDefault();
-    });
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    $("#etapeD").click(function(e) {
-        $(".D").is(":hidden");
-            $(".D").slideDown("slow");
-            $(".B,.C,.A,.E,.F,.G,.H,.I,.J").hide(); 
-       
-        e.preventDefault();
-    });
-
-    $("#etapeE").click(function(e) {
-        $(".E").is(":hidden");
-            $(".E").slideDown("slow");
-            $(".B,.C,.A,.D,.F,.G,.H,.I,.J").hide(); 
-        
-        e.preventDefault();
-    });
-
-    $("#etapeF").click(function(e) {
-        $(".F").is(":hidden");
-            $(".F").slideDown("slow");
-            $(".B,.C,.A,.E,.D,.G,.H,.I,.J").hide(); 
-        e.preventDefault();
-    });
-
-    $("#etapeG").click(function(e) {
-        $(".G").is(":hidden");
-            $(".G").slideDown("slow");
-            $(".B,.C,.A,.E,.F,.D,.H,.I,.J").hide(); 
-        e.preventDefault();
-    });
-
-    $("#etapeH").click(function(e) {
-        $(".H").is(":hidden");
-            $(".H").slideDown("slow");
-            $(".B,.C,.A,.E,.F,.G,.D,.I,.J").hide(); 
-        e.preventDefault();
-    });
-
-    $("#etapeI").click(function(e) {
-        $(".I").is(":hidden");
-            $(".I").slideDown("slow");
-            $(".B,.C,.A,.E,.F,.G,.D,.H,.J").hide(); 
-        e.preventDefault();
-    });
-    $("#etapeJ").click(function(e) {
-        $(".J").is(":hidden");
-            $(".J").slideDown("slow");
-            $(".B,.C,.A,.E,.F,.G,.D,.I,.H").hide(); 
-        e.preventDefault();
-    });
-});
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
