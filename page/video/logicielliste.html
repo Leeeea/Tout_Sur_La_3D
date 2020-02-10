@@ -15,51 +15,7 @@
     <link rel="icon"  href="../../img/logo.png"/>   
     <title>Tout Sur La 3D</title>
 </head>
-<style>
-     
-        .column {
-          float: left;
-          width: 33.33%;
-          display: none; /* Hide all elements by default */
-        }
-        
- 
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        /* Content */
-        .content {
-       
-          padding: 10px;
-        }
-        
-        /* The "show" class is added to the filtered elements */
-        .show {
-          display: block;
-        }
-        
-        /* Style the buttons */
-        .btn {
-          border: none;
-          outline: none;
-          padding: 12px 16px;
-          background-color: white;
-          cursor: pointer;
-        }
-        
-        .btn:hover {
-          background-color: #91ff00;
-          transition: 0.4s;
-        }
-        
-        .btn.active {
-          background-color: #00ff55;
-          color: black;
-        }
-        </style>
+
 <body>
      <!-- ---------BACKGROUND-------- -->
     <img class="bg" src="../../img/head.jpg">  
@@ -118,43 +74,80 @@
     <main>
         <div class="txt">
           <div>
+
             <div id="myBtnContainer">
-              <button class="btn" onclick="filterSelection('3D')">3D</button>
-              <button class="btn" onclick="filterSelection('Montage')"> Montage</button>
+              <button class="btn active" onclick="filterSelection('3D')">3D</button>
               <button class="btn" onclick="filterSelection('Gratuit')">Gratuit</button>
+              <button class="btn" onclick="filterSelection('Payant')">Payant</button>
+              <button class="btn" onclick="filterSelection('Fluide')">Fluide</button>
+              <button class="btn" onclick="filterSelection('ES')">Effets Spéciaux</button>
+              <button class="btn" onclick="filterSelection('Montage')"> Montage</button>
             </div>
+
             <div class="row">
-              <div class="column 3D">
+              <div class="column 3D Payant">
                 <div class="content">
                   <img src="../../img/3dsmax.jpg"  style="width:100%">
-                   <p>3Ds Max</p>
+                  <p>3Ds Max</p>
                 </div>
               </div>
-              <div class="row">
-                  <div class="column 3D">
+
+              
+                <div class="column 3D Gratuit">
+                  <div class="content">
+                    <img src="../../img/blender.jpg"  style="width:100%">
+                    <p>Blender</p>
+                  </div>
+                </div>
+              
+                  <div class="column 3D Payant">
                     <div class="content">
-                      <img src="../../img/3dsmax.jpg"  style="width:100%">
-                       <p>3Ds Max</p>
+                      <img src="../../img/cinema4d.jpg"  style="width:100%">
+                      <p>Cinema 4D</p>
                     </div>
                   </div>
-                  <div class="row">
-                      <div class="column 3D">
-                        <div class="content">
-                          <img src="../../img/3dsmax.jpg"  style="width:100%">
-                           <p>3Ds Max</p>
-                        </div>
+                  <div class="column Payant 3D">
+                    <div class="content">
+                      <img src="../../img/rhino3d.jpg"  style="width:100%">
+                      <p>Rhino 3D</p>
+                    </div>
+                  </div>
+                  <div class="column 3D Fluide Payant">
+                    <div class="content">
+                      <img src="../../img/realflow.jpg"  style="width:100%">
+                      <p>RealFlow</p>
+                    </div>
+                  </div>
+                  <div class="column 3D Gratuit">
+                      <div class="content">
+                        <img src="../../img/Meshmixer.jpg"  style="width:100%">
+                        <p>Meshmixer</p>
                       </div>
-              <div class="column Montage">
-                <div class="content">
-                  <img src="../../img/premierepro.jpg"  style="width:100%">
-                  <p>3D Slash</p>
+                  </div>
+                
+                  <div class="column 3D Gratuit">
+                    <div class="content">
+                      <img src="../../img/sketchup.jpg"  style="width:100%">
+                      <p>SketchUp</p>
+                    </div>
+                  </div>
+                  <div class="column Montage Payant">
+                    <div class="content">
+                      <img src="../../img/premiere.jpg"  style="width:100%">
+                      <p>Premiere Pro</p>
+                    </div>
+                  </div>
+                  <div class="column 3D ES Payant">
+                    <div class="content">
+                      <img src="../../img/houdini.jpg"  style="width:100%">
+                      <p>Houdini </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
-      </div> 
-      </div>
 
     </main>
     <!-- FOOTER -->
