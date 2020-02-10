@@ -113,20 +113,20 @@
                     
                     <div class="fiche fi1 shadow">
                         <a href="page/metier/character-designer.html"><img src="img/character-designer.jpg" style="width:100%"></a>
-                        <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
+                        </p>
                         <a href="page/metier/character-designer.html" ><h2>Character Designer</h2></a>
                     </div>
 
                     
                     <div class="fiche fi2 shadow">
                         <a href="page/metier/illustrateur.html"><img src="img/illustrateur.jpg" style="width:100%"></a>
-                        <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
+                        </p>
                         <a href="page/metier/illustrateur.html" ><h2>Illustrateur</h2></a>
                     </div>
                     
                     <div class="fiche fi3 shadow">
                         <a href="page/metier/truquiste2d-3d.html"><img src="img/truquiste.jpg" style="width:100%"></a>
-                        <p class="ano"><a href="https://unsplash.com/">Source de l'image : unsplash.com</a></p>
+                        </p>
                         <a href="page/metier/truquiste2d-3d.html" ><h2>Truquiste 2D/3D</h2></a>
                     </div>
                 </div>
@@ -161,32 +161,36 @@
                 <div class="barre"></div>
                 <div class="txt shadow">
                     <a href="page/logiciel.html" ><img class="hover" src="img/software.png" style="width:8%"></a>  
-                    <p>.......
+                    <p> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem veritatis, quod amet animi, eligendi quia et minus fugit cum saepe facilis deleniti laudantium. Est vitae amet maxime reiciendis dolores.
                         <a class="a-deco" href="page/logiciel.html">Logiciels ...</a>
                     </p>
-                     <div class="flex gridlog">
+                    <div class="flex gridlog">
                     <div class="fiche fi1 shadow">
                            <a href="page/article/logiciel.html" class="">
-                            <img src="img/software.jpg" alt="" style="width:100%">      
+                            <img src="img/software.jpg" alt="" style="width:100%">     </p>
                             <h2>Article</h2>
+                            <h4>Top 3 des logiciels utilisés dans l'animation 3D</h4>
                             </a>
-                            <p class="p-fiche ">...</p>
+                            
                     </div>
                     <div class="fiche fi2 shadow">
                             <a href="page/video/logvideo.html" class="">
                             
                             <img src="img/video.jpg" alt="" style="width:100%">  
                             <h2>Les tutos</h2>
+                            <h4>Quelques Tutos pour se faire la main avec la 3D</h4>
                             </a>   
-                            <p >.....</p>
+                            
                     </div>
                     <div class="fiche fi2 shadow">
                             <a href="page/video/logicielliste.html" class="">
                             
                             <img src="img/liste.jpg" alt="" style="width:100%">  
-                            <h2>Liste</h2>
+                            <h2>Logiciels</h2>
+                            <h4>Une liste de logiciels pour trouver le lociciel ideal</h4>
                             </a>   
-                            <p >.....</p>
+                            
                     </div>
                 </div>
                 </div>
@@ -304,101 +308,11 @@
         </div>
         <hr>
         <p class="p-footer">Copyright © 2019 - Tout Sur La 3D/Animatic - Tous droits réservés</p>
+        <p class="ano"><a href="https://unsplash.com/" target="_blank">Source des images : unsplash.com</a></p>
     </footer>
     
 
     <script src="jquery.js"></script>
-    
-    <script>
-        // MENU MENU MENU
-        function menu(){
-            document.querySelector("nav").
-            classList.toggle("translate")
-        }
-
-        function menuf(){
-            document.querySelector("nav").
-            classList.toggle("translate")
-        }
-     
-        // FRISE FRISE FRISE
-        $(document).ready(function() {
-
-            // ChronologieHistoire
-            $(".A").hide();
-            $(".B").hide();
-            $(".C").hide();
-            $("#etapeA").click(function(e) {
-                if ($(".A").is(":hidden")){
-                    $(".A").slideDown("slow");
-                    $(".B,.C").slideUp("fast");
-                }
-                else{
-                    $(".A").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-            $("#etapeB").click(function(e) {
-                if ($(".B").is(":hidden")){
-                    $(".B").slideDown("slow");
-                    $(".A,.C").slideUp("fast");
-                }
-                else{
-                    $(".B").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-            $("#etapeC").click(function(e) {
-                if ($(".C").is(":hidden")){
-                    $(".C").slideDown("slow");
-                    $(".A,.B").slideUp("fast");
-                }
-                else{
-                    $(".C").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-            
-            
-
-
-            // ChronologieFilm
-            $(".Y").hide();
-            $(".Z").hide();
-            $(".Q").hide();
-    
-            $("#etapeZ").click(function(e) {
-                if ($(".Z").is(":hidden")){
-                    $(".Z").slideDown("slow");
-                    $(".Y,.Q").slideUp("fast");               
-                }
-                else{
-                    $(".Z").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-           
-            $("#etapeY").click(function(e) {
-                if ($(".Y").is(":hidden")){
-                    $(".Y").slideDown("slow");
-                    $(".Z,.Q").slideUp("fast");                
-                }
-                else{
-                    $(".Y").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-            $("#etapeQ").click(function(e) {
-                if ($(".Q").is(":hidden")){
-                    $(".Q").slideDown("slow");
-                    $(".Y,.Z").slideUp("fast");               
-                }
-                else{
-                    $(".Q").slideUp("fast");
-                }
-                e.preventDefault();
-            });
-        });
-    </script>      
+    <script src="js/menu.js"></script>      
 </body>
 </html>

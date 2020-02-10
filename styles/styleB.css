@@ -166,6 +166,8 @@ nav a:hover:nth-child(1) {
     background-color: rgb(19, 19, 19);
     width: 100%;
     overflow: hidden;
+    position: sticky;
+    top:0;
 }
 
 .menu button {
