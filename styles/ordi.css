@@ -216,7 +216,12 @@ iframe{
     grid-template-areas: 
         "fi1 fi2 fi3";
 }
+.reduc{
+    margin: 10px 20% auto 20%;
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.699) inset;
+    padding:20px;
 
+}
 
 .text {
     color: white;

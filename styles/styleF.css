@@ -249,7 +249,8 @@ iframe{
 .container {
     position: relative;
     width: 100%;
-    overflow: hidden;
+   
+    overflow:hidden;
   }
   
   .image {
@@ -264,7 +265,7 @@ iframe{
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0;
+  
     background-color: rgba(0, 0, 0, 0.829);
     overflow: hidden;
     width: 100%;
@@ -272,22 +273,26 @@ iframe{
     transition: .5s ease;
   }
   
-  .container:hover .overlay {
-    opacity: 1;
-  }
+.ptxt{
+  margin:auto 10% 30px 10%;
+}
   
   .text {
     color: white;
     font-size: 20px;
     position: absolute;
-    top:50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top:0%;
+    overflow-y: scroll;
+    left: -2%;
     text-align: center;
+    animation: fadetxt 2s;
+    
   }
-  
+  @keyframes fadetxt{
+    0%{
+      opacity: 0;}
+
+  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 1000px;
@@ -328,7 +333,7 @@ iframe{
     bottom: 8px;
     width: 100%;
     text-align: center;
-    overflow-y:scroll;
+   
     height: 350px;
   }
   
