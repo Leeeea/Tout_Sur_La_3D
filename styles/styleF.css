@@ -31,7 +31,7 @@ h1{
     margin: 20px auto 0px auto;
 }
 span{
-    background: rgb(255, 0, 98);
+    background: #c70dff;
     padding: 1px;
 }
 
@@ -222,7 +222,8 @@ nav a:hover:nth-child(2) {
 }
 
 iframe{
-    margin: 5px;
+    margin-top: 10%;
+    width: 100%;
 }
   
 /* ******************************************************* */
@@ -246,53 +247,16 @@ iframe{
 /* ******************************************************* */
 /************************* Slider & Images STYLE-********* */
 /* ******************************************************* */
-.container {
-    position: relative;
-    width: 100%;
-   
-    overflow:hidden;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  
-    background-color: rgba(0, 0, 0, 0.829);
-    overflow: hidden;
-    width: 100%;
-    height:100%;
-    transition: .5s ease;
-  }
-  
-.ptxt{
-  margin:auto 10% 30px 10%;
+.overlay>div{
+  background-color: rgb(216, 216, 216);
+  box-shadow: inset 4px 10px 9px  rgba(0, 0, 0, 0.726);
+  padding: 5vh;
+  color: black;
+  font-weight: 500;
 }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top:0%;
-    overflow-y: scroll;
-    left: -2%;
-    text-align: center;
-    animation: fadetxt 2s;
-    
-  }
-  @keyframes fadetxt{
-    0%{
-      opacity: 0;}
-
-  }
+.overlay>div>*{
+  padding: 10px;
+}
   /* Slideshow container */
   .slideshow-container {
     max-width: 1000px;
