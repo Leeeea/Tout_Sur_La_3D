@@ -2,8 +2,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 body{
     background-color: #424242;
     margin:0px;  
@@ -229,6 +227,10 @@ nav a:hover:nth-child(2) {
     margin: 20px 
     
 }
+.explication{
+  text-align: center;
+  padding: 30px;
+}
 /* Liste */
 .txtstyle{
     background: #111111;
@@ -291,9 +293,9 @@ nav a:hover:nth-child(2) {
 
 
   }
+  
 
   .overlay {
-
     text-align: center;
     position: absolute;
     bottom: 100%;
@@ -304,11 +306,13 @@ nav a:hover:nth-child(2) {
     width: 100%;
     height:0;
     transition: .5s ease;
+    
   }
   
   .container:hover .overlay {
     bottom: 0;
     height: 100%;
+    padding: 3px;
   
   }
   
@@ -354,7 +358,7 @@ main{
 .fiche{
     margin: 50px 10px 10px 10px;
     padding: 10px;
-    background: #001535a1;
+    background: #000000ec;
 }
 
 /* liste */
